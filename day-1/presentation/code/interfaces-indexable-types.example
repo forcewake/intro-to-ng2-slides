@@ -1,0 +1,13 @@
+interface StringArray {
+    [index: number]: string;
+}
+
+interface StringDictionary {
+    [index: string]: string;
+}
+
+let stringArray: StringArray;
+stringArray = ["Bob", "Fred"];
+
+let stringDictionary : StringDictionary;
+stringDictionary = { "key": "value" };

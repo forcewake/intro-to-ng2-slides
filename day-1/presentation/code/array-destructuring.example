@@ -1,0 +1,6 @@
+let input = [1, 2, 3, 4];
+let [first, second, ...rest] = input;
+
+console.log(first);  // outputs 1
+console.log(second); // outputs 2
+console.log(rest);   // outputs [ 3, 4 ]

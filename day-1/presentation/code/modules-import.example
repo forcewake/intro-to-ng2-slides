@@ -1,0 +1,12 @@
+// Import named exports
+import { ZipCodeValidator, NumberRegexp } from "./ZipCodeValidator";
+
+// Rename imported item
+import { ZipCodeValidator as zcv } from "./ZipCodeValidator";
+
+// Import the entire module into a single variable
+import * as validator from "./ZipCodeValidator";
+let myValidator = new validator.ZipCodeValidator();
+
+// Import `export default` item
+import validate from "./Validators";

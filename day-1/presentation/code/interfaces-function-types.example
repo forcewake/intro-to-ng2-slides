@@ -1,0 +1,9 @@
+interface SearchFunc {
+    (source: string, subString: string): boolean;
+}
+
+let mySearch : SearchFunc;
+mySearch = (source: string, subString: string) => {
+    // ...
+    return true;
+};

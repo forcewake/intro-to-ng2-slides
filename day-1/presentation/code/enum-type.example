@@ -1,0 +1,9 @@
+// By default, enums begin numbering their members starting at 0
+enum Color {Red, Green, Blue = 4};
+
+// Store enum variant in a variable
+let c: Color = Color.Green;
+
+// It's possible to get string name of an enum variant
+let colorName: string = Color[Color.Green]; // "Green"
+let colorName: string = Color[0];           // "Red"

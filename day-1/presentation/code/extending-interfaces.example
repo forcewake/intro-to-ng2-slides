@@ -1,0 +1,11 @@
+interface Shape {
+    color: string;
+}
+
+interface Square extends Shape {
+    sideLength: number;
+}
+
+function printSquare(square: Square) {
+    console.log(`color: ${square.color}, length:${square.sideLength}`);
+}

@@ -1,0 +1,16 @@
+interface SquareConfig {
+    color?: string;
+    width?: number;
+}
+
+function createSquare(config: SquareConfig) {
+    // ...
+}
+
+let mySquare = createSquare({color: "black", widht: 50});
+
+test.ts(17,47): error TS2345: Argument of type
+'{ color: string; widht: number; }'
+is not assignable to parameter of type 'SquareConfig'.
+Object literal may only specify known properties,
+and 'widht' does not exist in type 'SquareConfig'.

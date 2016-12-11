@@ -1,0 +1,11 @@
+type Easing = "ease-in" | "ease-out" | "ease-in-out";
+
+class UIElement {
+    animate(dx: number, dy: number, easing: Easing) {
+        // ...
+    }
+}
+
+let button = new UIElement();
+button.animate(0, 0, "ease-in");
+button.animate(0, 0, "uneasy"); // error: "uneasy" is not allowed here

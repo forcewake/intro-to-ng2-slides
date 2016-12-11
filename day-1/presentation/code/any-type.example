@@ -1,0 +1,8 @@
+let notSure: any = false;
+notSure = "maybe a string instead";
+notSure = 4;
+
+notSure.toFixed(); // okay, toFixed exists
+                   // (but the compiler doesn't check)
+
+notSure.ifItExists(); // Runtime error

@@ -1,0 +1,13 @@
+let book = {
+    title: "TypeScript for dummies",
+    author: "John Doe",
+    year: 2016
+};
+
+console.log(book.author); // "John Doe"
+console.log(book.title);  // "TypeScript for dummies"
+
+let bookObject : Object = book;
+
+// Error: Property 'author' does not exist on type 'Object'.
+console.log(bookObject.author);

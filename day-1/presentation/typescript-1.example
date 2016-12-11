@@ -1,9 +1,0 @@
-function repeat(s) {
-    return s + s;
-}
-
-//becomes
-
-function repeat(s: string) : string {
-    return s + s;
-}

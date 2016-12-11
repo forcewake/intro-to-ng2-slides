@@ -1,0 +1,13 @@
+interface Entity {
+    id: number;
+}
+
+interface Serializable {
+    serialize(): string;
+}
+
+function store(entity: Entity & Serializable) {
+    let storage = window.localStorage;
+    let key = entity.id.toString();
+    storage.setItem(key, entity.serialize());
+}

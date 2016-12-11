@@ -1,0 +1,10 @@
+/* Validators.ts */
+
+export interface StringValidator {
+    isAcceptable(s: string): boolean;
+}
+
+export default function Validate(
+        value: string, validator: StringValidator) : bool {
+    // ...
+}

@@ -1,0 +1,15 @@
+function buildName(first: string, last?: string): string {
+    // ...
+}
+
+function buildName(first: string, last = "Smith"): string {
+    // ...
+}
+
+function buildName(first: string, ...rest: string[]): string {
+    // ...
+}
+
+// Lamda syntax
+let buildName: (string, string) => string;
+buildName = (first, last) => `${first} + ${last}`;
