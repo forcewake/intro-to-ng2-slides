@@ -1,0 +1,85 @@
+Typescript
+            <Image height="200px" src={images.logo.replace("/", "")}></Image>
+
+__________
+
+typescript: optional static typing, interfaces.
+lead by Microsoft, designed by the architect of C#
+
+___________
+What's going on in the JS world?
+JS became agile!
+
+JS (Javascript) == ES (ECMAScript)
+
+ES1 - '97
+ES2 - '98
+ES3 - '99
+ES4 - (cancelled bec too ambitious)
+ES5 - '09
+.... and nothing again for 6 years ...
+ES6 - '05 (nearly cancelled)
+So they decided to ship a new version every year.
+ES6 -> ES2015
+ES7 -> ES2016
+...
+
+___________
+
+Compatibility
+Transpilers can compile:
+- ES2015 > ES5 for 74% of the test cases. And 100% of what's important.
+- And 80% of stable ES2016.
+
+https://kangax.github.io/compat-table/es6/
+
+
+Don't bother that much about compatibility.
+
+___________
+
+Features
+
+Default parameters
+function defaultsDemo( a = 1, b = 'myDefaultValue') { return b + a ;}
+defaultsDemo() // "myDefaultValue1"
+
+Class 
+
+class A {
+	constructor(){}
+
+	methodAdd(a) {return a+1;};
+
+}
+var myInstance = new A();
+myInstance.methodAdd(1) // 2
+
+Rest & spread
+function restsDemo(a = 1, ...restOfStuff) { return restOfStuff}
+restDemo(1,2,3,4) // [2,3,4]
+
+
+function myFunction(a,b,c) { return a + b + c }
+var paramsToSpread = [1,1,1]
+myFunction(...paramsToSpread) // 3
+
+var myArray = [1,2,3]
+var elementToAdd = 4
+[...myArray,elementToAdd]; // [1,2,3,4]
+
+For...of <=> foreach on arrays
+
+Destructuring
+var [a,b] = ["myVarA",2];
+a // "myVarA"
+b // 2
+
+const, let, var 
+
+arrow functions
+aka no more that = this, aka life.
+
+function(x) { return x+1 } ~= x => x+1
+//it binds to this too.
+_____________

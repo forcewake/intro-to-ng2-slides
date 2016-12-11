@@ -1,0 +1,8 @@
+var sum = function(x) {
+	return x + this.y;
+}.bind(this);
+
+
+//is equivalent to
+
+var sum = x => x + this.y;

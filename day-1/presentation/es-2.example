@@ -1,0 +1,2 @@
+function simple( a = 1, b = '-inovia') { return a + b;}
+simple() // "1-inovia"

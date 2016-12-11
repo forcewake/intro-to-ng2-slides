@@ -1,0 +1,10 @@
+function myFunction(a,b,c) { 
+	return a + b + c;
+}
+var paramsToSpread = [1,1,1]
+myFunction(...paramsToSpread) // 3
+
+
+var myArray = [1,2,3]
+var elementToAdd = 4
+[...myArray,elementToAdd]; // [1,2,3,4]

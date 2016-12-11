@@ -1,0 +1,7 @@
+function restDemo(a = 1, ...restOfStuff) { 
+	return restOfStuff;
+}
+
+restDemo(1,2,3,4) // [2,3,4]
+
+

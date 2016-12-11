@@ -1,0 +1,10 @@
+//firstFile.js
+const D = 123;
+
+export D;
+
+//secondFile.js
+
+import { D } from "./firstFile.js";
+
+

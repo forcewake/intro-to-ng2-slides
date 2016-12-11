@@ -1,0 +1,20 @@
+"use strict";
+
+(function() {
+    // `var` variables are valid in whole function scope.
+    // Doesn't matter where they are declared.
+    foo = true;
+    var foo;
+
+    if (foo) {
+        let bar = true;
+
+        const foobar = 3;
+
+        // Error: Left-hand side of assignment cannot be a constant
+        /* foobar = 4; */
+    }
+
+    // Error: Cannot find name 'bar'
+    /* console.log(bar); */
+}());
