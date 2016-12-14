@@ -1,0 +1,27 @@
+<h1>
+  {{title}}
+</h1>
+
+<app-movies></app-movies>
+
+
+
+
+<ul>
+  <li *ngFor="let movie of movies" 
+      (click)="onSelect(movie)">
+    <app-movie [movie]="movie"></app-movie>
+  </li>
+</ul>
+
+
+
+
+<div class="movie">
+  {{movie.title}}
+  <br>
+  <input type="text" 
+         [(ngModel)]="movie.title" />
+  <br>
+  <img [src]="movie.poster_path" alt="">
+</div>
