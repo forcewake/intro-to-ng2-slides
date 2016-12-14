@@ -45,7 +45,10 @@ const images = {
   framework: require("../assets/images/framework-to-platform.svg"),
   angular: require("../assets/images/angular.svg"),
   performance: require("../assets/images/performance.svg"),
-  languages: require("../assets/images/languages.svg")
+  languages: require("../assets/images/languages.svg"),
+  angular_website: require("../assets/images/angular.io.png"),
+  thoughtram: require("../assets/images/thoughtram-website.png"),
+  gitter: require("../assets/images/gitter.png"),
 };
 
 preloader(images);
@@ -93,6 +96,24 @@ export default class Presentation extends React.Component {
                   Languages
                 </div>
                 <Image width="100%" src={images.languages}/>
+              </Slide>
+
+              <Slide>
+                <Heading fit caps lineHeight={1} textColor="black">
+                  Useful Resources
+                </Heading>
+              </Slide>
+
+              <Slide>
+                <Image width="100%" src={images.angular_website}/>
+              </Slide>
+
+              <Slide>
+                <Image width="100%" src={images.thoughtram}/>
+              </Slide>
+
+              <Slide>
+                <Image width="100%" src={images.gitter}/>
               </Slide>
 
               <Slide>
