@@ -2,7 +2,6 @@ import { StyleSheet } from 'aphrodite'
 
 export const styles = StyleSheet.create({
   app: {
-    color: '#fff',
     fontFamily: 'SF UI Display',
   },
 
