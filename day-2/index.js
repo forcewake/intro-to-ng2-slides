@@ -7,5 +7,6 @@ import 'prismjs'
 import 'prismjs/components/prism-typescript'
 import 'prismjs/components/prism-handlebars'
 import 'prismjs/themes/prism-tomorrow.css'
+import './assets/styles/code.less'
 
 render(<Presentation/>, document.getElementById("root"));
