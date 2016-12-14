@@ -67,7 +67,7 @@ export default class Presentation extends React.Component {
 
           <Slide>
             <Image
-              src={ images.angular }
+              src={ images.angular.replace("/", "") }
               width={ 500 }/>
           </Slide>
 
@@ -87,21 +87,21 @@ export default class Presentation extends React.Component {
             <div>
               Framework to Platform
             </div>
-            <Image width="100%" src={images.framework}/>
+            <Image width="100%" src={images.framework.replace("/", "")}/>
           </Slide>
 
           <Slide>
             <div>
               Performance
             </div>
-            <Image width="100%" src={images.performance}/>
+            <Image width="100%" src={images.performance.replace("/", "")}/>
           </Slide>
 
           <Slide>
             <div>
               Languages
             </div>
-            <Image width="100%" src={images.languages}/>
+            <Image width="100%" src={images.languages.replace("/", "")}/>
           </Slide>
 
           <Slide>
@@ -111,15 +111,15 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide>
-            <Image width="100%" src={images.angular_website}/>
+            <Image width="100%" src={images.angular_website.replace("/", "")}/>
           </Slide>
 
           <Slide>
-            <Image width="100%" src={images.thoughtram}/>
+            <Image width="100%" src={images.thoughtram.replace("/", "")}/>
           </Slide>
 
           <Slide>
-            <Image width="100%" src={images.gitter}/>
+            <Image width="100%" src={images.gitter.replace("/", "")}/>
           </Slide>
 
           <Slide>
@@ -147,7 +147,7 @@ export default class Presentation extends React.Component {
                 </List>
               </Fill>
               <Fill>
-                <Image src={images.lego}
+                <Image src={images.lego.replace("/", "")}
                        margin="40px auto 0px"
                        width="460px"/>
               </Fill>
