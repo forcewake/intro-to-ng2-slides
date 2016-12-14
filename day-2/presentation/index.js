@@ -25,6 +25,8 @@ import {
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
+import preloader from "spectacle/lib/utils/preloader";
+
 import { css } from 'aphrodite'
 
 import { styles } from './styles'
@@ -35,36 +37,62 @@ import CodeSlide from 'spectacle-code-slide'
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
-const theme = createTheme({ primary: '#37474f' })
+const theme = createTheme({
+  primary: "#FFF"
+});
+
+const images = {
+  framework: require("../assets/images/framework-to-platform.svg"),
+  angular: require("../assets/images/angular.svg"),
+  performance: require("../assets/images/performance.svg"),
+  languages: require("../assets/images/languages.svg")
+};
+
+preloader(images);
 
 export default class Presentation extends React.Component {
   render() {
     return (
-        <div className={ css(styles.app) }>
-          <Spectacle theme={ theme }>
-            <Deck
-                transition={[ 'slide' ]}
-                transitionDuration={ 500 }
-                progress="none"
-                controls={ false }>
-
-              <Slide>
-                <Appear>
-                  <div>
-                    <div className={ css(styles.header) }>
-                      Pavel Nasovich
-                    </div>
-                    <div className={ css(styles.subHeader) }>
-                      @forcewake • http://github.com/forcewake
-                    </div>
-                  </div>
-                </Appear>
-              </Slide>
+          <Spectacle theme={theme}>
+            <Deck transition={["zoom", "slide"]} transitionDuration={500}>
 
               <Slide>
                 <Image
-                    src={ require('../assets/images/angular.svg') }
+                    src={ images.angular }
                     width={ 500 } />
+              </Slide>
+
+              <Slide>
+                <div fit className={ css(styles.header) }>
+                  Angular 2?
+                </div>
+                <List>
+                  <Appear><ListItem>The next major version of the Angular framework</ListItem></Appear>
+                  <Appear><ListItem>Rather a development platform than just a framework</ListItem></Appear>
+                  <Appear><ListItem>Mobile First, future ready, powered by open source community</ListItem></Appear>
+                  <Appear><ListItem>Faster, better tooling, more flexible, ...</ListItem></Appear>
+                </List>
+              </Slide>
+
+              <Slide>
+                <div>
+                  Framework to Platform
+                </div>
+                <Image width="100%" src={images.framework}/>
+              </Slide>
+
+              <Slide>
+                <div>
+                  Performance
+                </div>
+                <Image width="100%" src={images.performance}/>
+              </Slide>
+
+              <Slide>
+                <div>
+                  Languages
+                </div>
+                <Image width="100%" src={images.languages}/>
               </Slide>
 
               <Slide>
@@ -281,7 +309,6 @@ export default class Presentation extends React.Component {
               </Slide>
             </Deck>
           </Spectacle>
-        </div>
     );
   }
 }
