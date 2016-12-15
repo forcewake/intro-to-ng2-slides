@@ -67,7 +67,7 @@ export default class Presentation extends React.Component {
 
           <Slide>
             <Image
-              src={ images.angular.replace("/", "") }
+              src={ images.angular }
               width={ 500 }/>
           </Slide>
 
